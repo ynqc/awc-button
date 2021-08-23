@@ -13,7 +13,7 @@ module.exports = {
         hot: true
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
@@ -21,11 +21,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html'
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: './assets', to: "assets" },
-            ],
-        }),
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         { from: './assets', to: "assets" },
+        //     ],
+        // }),
     ],
     optimization: {
         splitChunks: {
@@ -41,18 +41,6 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: 'html-loader',
-            },
-            {
-                test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader'
-                ]
             }
         ]
     }
