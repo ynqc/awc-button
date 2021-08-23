@@ -1,8 +1,11 @@
 {
-  "name": "webcomponent-example",
+  "name": "awc-button",
   "version": "0.0.1",
-  "private": true,
   "description": "Web Components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ynqc/awc-button.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
@@ -16,7 +19,6 @@
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
-    "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.3.2",
     "style-loader": "^3.2.1",
