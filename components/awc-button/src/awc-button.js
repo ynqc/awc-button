@@ -1,7 +1,7 @@
 import "./style.css"
 import template from './template.html';
 
-class AwcButton extends HTMLElement {
+export default class AwcButton extends HTMLElement {
   static get observedAttributes() {
       return ['disabled', 'loading', 'icon']
   }
@@ -82,7 +82,6 @@ class AwcButton extends HTMLElement {
   }
 }
 
-
-customElements.define('awc-button', AwcButton);
-
-export default AwcButton
+if (!customElements.get('awc-button')) {
+    customElements.define('awc-button', awcButton);
+}
