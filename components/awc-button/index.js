@@ -1,3 +1,3 @@
-import  AwcButton from './component/awc-button';
+import  AwcButton from './src/awc-button';
 
 export default AwcButton;

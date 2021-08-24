@@ -1,10 +1,10 @@
 {
-  "name": "awc-button",
+  "name": "awc-icon",
   "version": "0.0.1",
   "description": "Web Components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ynqc/awc-button.git"
+    "url": "https://github.com/ynqc/web-components-js.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
