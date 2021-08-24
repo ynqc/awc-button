@@ -1,0 +1,53 @@
+awc-button { 
+    position: relative; 
+    display: inline-flex; 
+    padding: .25em .625em;
+    box-sizing: border-box; 
+    vertical-align: middle;
+    line-height: 1.8;
+    overflow: hidden; 
+    align-items: center;
+    justify-content: center;
+    border:1px solid var(--color,rgba(0,0,0,.2)); 
+    font-size: 14px; 
+    color: var(--color,#333);  
+    border-radius: .25em; 
+    transition:background .3s,box-shadow .3s,border-color .3s,color .3s;
+}
+awc-button [disabled],awc-button[loading]{
+    pointer-events: none; 
+    opacity:.6; 
+}
+awc-button[disabled]:not([type]) { 
+    background:rgba(0,0,0,.1); 
+}
+awc-button[disabled] .btn,awc-button[loading] .btn{ 
+    cursor: not-allowed; 
+    pointer-events: all; 
+}
+/* hover style type = default dashed text */
+awc-button:not([type="primary"]):not([disabled]):hover,
+awc-button:not([type="primary"]):focus-within,
+awc-button[type="text"] { 
+    color: #42b983; 
+    border-color: #42b983; 
+}
+awc-button[type="primary"]{ 
+    color: #fff; 
+    background: #42b983;
+}
+awc-button[type="dashed"]{ 
+    border-style: dashed 
+}
+awc-button[type="text"],awc-button[type="primary"] { 
+    border:0;
+    padding: calc( .25em + 1px ) calc( .625em + 1px );
+}
+awc-loading{ 
+    margin-right: 0.35em;  
+}
+
+awc-icon{
+    margin-right: 0.35em;
+    transition: none;
+}
