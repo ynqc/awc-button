@@ -1,15 +1,10 @@
 {
-  "name": "awc-button",
+  "name": "web-components-js",
   "version": "0.0.1",
   "description": "Web Components",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ynqc/awc-button.git"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "build-libs": "node build-libs.js",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "Web Component",
@@ -17,6 +12,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "chalk": "^4.1.2",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "html-loader": "^0.5.5",
